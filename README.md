@@ -16,8 +16,8 @@ TOEFL NEEA 托福空余考位自动扫描脚本，支持自定义城市。
 
 ![check](image/check.png)
 
-- 粘贴以下代码，空余考位将直接显示在Console栏
-![console](image/console.png)
+- 在Console栏中粘贴以下代码，空余考位将直接显示在Console栏
+![console](image/code.png)
 
 🚀**Scanner()默认搜索全部城市，如果需要搜索选定城市，请将最下方Scanner()中的【true】改为【false】**
 
@@ -44,7 +44,7 @@ async function Scanner(city_choose, all) {
     			for (j = 1; j < 18; ++j) {
         			day.options[j].selected = true
         			btn_query.click()
-        			await sleep(1500)
+        			await sleep(1000)
         			tables = document.getElementsByClassName("table table-bordered table-striped")
         			if (tables.length == 1) {
         		    	tb = tables[0]
@@ -52,7 +52,7 @@ async function Scanner(city_choose, all) {
         		        	if (tb.rows[row].cells[3].innerText == "有名额") {
         		            	console.log(
         		                	city.options[i].innerText,
-        		                	day.options[j].inerText,
+        		                	day.options[j].innerText,
         		                	tb.rows[row].cells[1].innerText)
 }}}}}}}}
 
@@ -64,8 +64,11 @@ Scanner(city_choose, true)
 
 ```
 
+- 输出结果
 
+![console](image/result.png)
 
 ## 🎉鸣谢
 
 感谢[NEEA_TOEFL_AUTOMATOR](https://github.com/Augustpan/NEEA_TOEFL_AUTOMATOR)的启发，本项目在此基础上新增了城市选择功能。
+
