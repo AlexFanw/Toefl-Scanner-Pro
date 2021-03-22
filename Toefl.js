@@ -1,27 +1,3 @@
-# Toefl-Scanner-Pro
-
-TOEFL NEEA 托福空余考位自动扫描脚本，支持自定义城市。
-
-
-
-## 🤖️使用方法
-
-- 登录NEEA TOEFL界面
-
-- 点击「考位查询」
-
-![search](image/search.png)
-
-- 打开检查界面，点击Console界面
-
-![check](image/check.png)
-
-- 粘贴以下代码，空余考位将直接显示在Console栏
-![console](image/console.png)
-
-🚀**Scanner()默认搜索全部城市，如果需要搜索选定城市，请将最下方Scanner()中的【true】改为【false】**
-
-```javascript
 //在这里加入你需要选择的城市。
 var city_choose = ["武汉","郑州","长沙"]
 
@@ -61,11 +37,3 @@ async function Scanner(city_choose, all) {
 
 //搜索全部城市
 Scanner(city_choose, true)
-
-```
-
-
-
-## 🎉鸣谢
-
-感谢[NEEA_TOEFL_AUTOMATOR](https://github.com/Augustpan/NEEA_TOEFL_AUTOMATOR)的启发，本项目在此基础上新增了城市选择功能。
