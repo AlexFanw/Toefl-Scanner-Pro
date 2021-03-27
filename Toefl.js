@@ -1,7 +1,11 @@
 //在这里加入你需要选择的城市。
-var city_choose = ["武汉","郑州","长沙"]
+var city_choose = ["武汉","长沙","南昌"]
+
 //在这里加入你需要选择的时间[start_time,end_time]。
 var time_start_end = ["2021-4-10","2021-10-30"]
+
+//搜索全部时间
+//var time_start_end = ["2000-4-10","2099-10-30"]
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
